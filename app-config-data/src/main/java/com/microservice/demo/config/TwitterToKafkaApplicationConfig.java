@@ -1,12 +1,10 @@
-package com.micoservice.demo.config;
+package com.microservice.demo.config;
 
-import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 
-//@Data
 @Configuration
 @ConfigurationProperties(prefix = "twitter-to-kafka-serv")
 public class TwitterToKafkaApplicationConfig {
@@ -29,4 +27,5 @@ public class TwitterToKafkaApplicationConfig {
     public void setWelcomeMessage(List<String> welcomeMessage) {
         this.welcomeMessage = welcomeMessage;
     }
+
 }
